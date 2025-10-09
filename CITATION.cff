@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "RLBidder: Reinforcement Learning for Auto-bidding"
+abstract: "A modern, modular library for RL-based auto-bidding in online advertising auctions. It provides data pipelines, environments, baseline and advanced agents, evaluation, and visualization—built to support both academic research and industrial deployment."
+authors:
+  - family-names: "Zuo"
+    given-names: "Xingdong"
+version: 0.1.0
+date-released: 2025-10-09
+url: "https://github.com/zuoxingdong/rlbidder"
+repository-code: "https://github.com/zuoxingdong/rlbidder"
+license: MIT
+keywords:
+  - reinforcement-learning
+  - auto-bidding
+  - online-advertising
+  - auctions
+  - pytorch
+  - offline-rl
+  - decision-transformer
+  - conservative-q-learning
+  - implicit-q-learning
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Zuo"
+      given-names: "Xingdong"
+  title: "RLBidder: Reinforcement Learning for Auto-bidding"
+  year: 2025
+  url: "https://github.com/zuoxingdong/rlbidder"
