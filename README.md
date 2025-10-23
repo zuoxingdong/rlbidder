@@ -221,7 +221,8 @@ python examples/train_iql.py \
   --model_cfg.lr_actor 3e-4 \
   --model_cfg.lr_critic 3e-4 \
   --model_cfg.num_q_models 5 \
-  --model_cfg.bc_alpha 0.01
+  --model_cfg.bc_alpha 0.01 \
+  --train_cfg.enable_aim_logger=False
 
 # Train DT (Decision Transformer) - sequence modeling for RL
 python examples/train_dt.py \
@@ -229,14 +230,22 @@ python examples/train_dt.py \
   --model_cfg.num_layers 6 \
   --model_cfg.lr 1e-4 \
   --model_cfg.rtg_scale 98 \
-  --model_cfg.target_rtg 2.0
+  --model_cfg.target_rtg 2.0 \
+  --train_cfg.enable_aim_logger=False
 ```
 
 **What you'll have:** Trained model checkpoints in `examples/checkpoints/` with scalers and hyperparameters.
 
 **💡 Configuration powered by draccus:** All training scripts use type-safe dataclass configs with automatic CLI generation. Override any nested config with dot-notation (e.g., `--model_cfg.lr 1e-4`) or pass config files directly.
 
-**💡 Track experiments with Aim:** All training scripts automatically log metrics, hyperparameters, and model artifacts to Aim (a local experiment tracker). Launch the Aim UI to visualize training progress:
+**💡 Track experiments with Aim:** All training scripts automatically log metrics, hyperparameters, and model artifacts to Aim (a local experiment tracker). 
+To use Aim, first initialize your project with:
+
+```bash
+aim init
+```
+
+Then launch the Aim UI to visualize training progress:
 
 ```bash
 aim up --port 43800

@@ -217,7 +217,8 @@ examples/eval/
 examples/.tmp/
 
 # Data files
-data/
+# Ignore only top-level data/ directory, not rlbidder/data/ module
+/data/
 *.parquet
 *.csv
 *.npz
