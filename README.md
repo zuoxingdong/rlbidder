@@ -166,12 +166,6 @@ Beyond raw performance metrics, `rlbidder` helps you understand *why* agents beh
 - PyTorch 2.6 or newer (follow [PyTorch install guide](https://pytorch.org/get-started/locally/))
 - GPU with 8GB+ vRAM recommended for training
 
-#### Install from PyPI
-
-```bash
-pip install rlbidder
-```
-
 #### Local Development
 
 ```bash
